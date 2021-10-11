@@ -30,7 +30,7 @@ jobs:
               "Job_id": ${{ github.job }}
               "payload": {
                 "service_name": "${{ github.repository }}",
-                "coverage": "${{ steps.qa-stats.outputs.coverage }}"
+                "coverage": ${{ steps.qa-stats.outputs.coverage }}
               }
             }
 
